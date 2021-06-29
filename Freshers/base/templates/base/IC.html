@@ -1,0 +1,241 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Institute Core</title>
+  <style media="screen">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:ital,wght@0,100;0,200;1,100&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #161623;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgb(0, 125, 255), rgb(227, 0, 255));
+      clip-path: circle(30% at right);
+    }
+
+    body::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(330deg,rgb(150, 49, 49), rgb(0, 255, 229));
+      clip-path: circle(20% at 10% 60%);
+
+    }
+
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      z-index: 1;
+    }
+
+    .container .card {
+      position: relative;
+      width: 280px;
+      height: 300px;
+      margin: 30px;
+      box-shadow: 20px 20px 50px rgb(0, 0, 0, .5);
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      transition: .2s;
+    }
+
+    .container .card .content {
+      padding: 20px;
+      text-align: center;
+
+    }
+
+    .container .card:hover {
+      transform: scale(1.1);
+    }
+
+    .container .card .content h1 {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      font-size: 3.5em;
+      color: rgb(255, 255, 255, 0.3);
+      pointer-events: none;
+    }
+
+    .container .card .content h3 {
+      font-size: 1.8em;
+      padding-top: 80px;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .container .card .content p {
+      font-size: 1em;
+      color: #fff;
+      font-weight: 300;
+    }
+
+    .container .card .content a {
+      position: relative;
+      display: inline-block;
+      padding: 8px 20px;
+      margin-top: 15px;
+      background-color: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: 500;
+      box-shadow: 0 5px 15px rgb(0, 0, 0, .2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="content">
+        <h1>CHM101A</h1>
+        <h3>Basic Chemistry Lab</h3>
+        <a href="https://drive.google.com/drive/folders/1PNgJovTasAnFqXMs_x_t9OFv5bni3jFq" target="_blank">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h1>CHM102A</h1>
+        <h3>Basic Chemistry</h3>
+        <a href="https://drive.google.com/drive/folders/1MuS2xlNDtWVIlMtElAweaEUvYOlGp3fp" target="_blank">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h1>ESC101A</h1>
+        <h3>Introduction to C Programming</h3>
+        <a href="https://drive.google.com/drive/folders/1AkNc-BK6_Rql8MD90KQa9fBSfuljEbUt" target="_blank">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h1>ESC201A</h1>
+        <h3>Introduction to Electronics</h3>
+        <a href="https://drive.google.com/drive/folders/1bVSoOiyc1rhNoRns-4xcWQoUCdqINE5B" target="_blank">Read More</a>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="content">
+        <h1>LIF101A</h1>
+        <h3>Laws of inheritance</h3>
+        <a href="https://drive.google.com/drive/folders/1Z80E4JHmCAbhP0WXOUot3QwyGeVYsodn" target="_blank">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h1>MTH101A</h1>
+        <h3>Mathematics I</h3>
+        <a href="https://drive.google.com/drive/folders/1RHsWQBJeatNGiqNa4j9BzmGfVnouj_Bh" target="_blank">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h1>MTH102A</h1>
+        <h3>Linear Algebra</h3>
+        <a href="https://drive.google.com/drive/folders/1dJQt81jICQ0hNEg1B0gs8kW-3DeWTAXd" target="_blank">Read More</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h1>MSO202A</h1>
+        <h3>Complex Variables</h3>
+        <a href="https://drive.google.com/drive/folders/1A_kAvp8-s6ToraM5YgAhD7svfAkv6Gte" target="_blank">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h1>MSO203A</h1>
+        <h3>Partial Differential Equation</h3>
+        <a href="https://drive.google.com/drive/folders/1boMdnkuS_Y5IJScQTc5bFgn-tvv_g0R2" target="_blank">Read More</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h1>PHY101A</h1>
+        <h3>Physics Laboratory</h3>
+        <a href="https://drive.google.com/drive/folders/1BeMozLmDawE9nNf9Z_lv5MOORjK9st1u" target="_blank">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h1>PHY102A</h1>
+        <h3>Physics I</h3>
+        <a href="https://drive.google.com/drive/folders/1kfXknVNoRKVhcZC_KiqShprQCD75Z93w" target="_blank">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h1>PHY103A</h1>
+        <h3>Physics II</h3>
+        <a href="https://drive.google.com/drive/folders/1oJwJl5n7H44TNYSIhJyrsB8V6RUWGT0X" target="_blank">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h1>TA101A</h1>
+        <h3>Manufacturing Process I</h3>
+        <a href="https://drive.google.com/drive/folders/1LUSpOMhl7Yq5oZFg0AwXav88rHAaT8uv" target="_blank">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <h1>TA202A</h1>
+        <h3>Manufacturing Process II</h3>
+        <a href="https://drive.google.com/drive/folders/1AzdO6bAWyqjwdnpt3iG2nPc2jbZna2fG" target="_blank">Read More</a>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>

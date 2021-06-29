@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>About Me</title>
+  <style media="screen">
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    main {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    main .Image {
+      width: 400px;
+
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
+    main .info {
+      font-size: 25px;
+      font-weight: 300;
+      padding: 0 10px;
+      line-height: 40px;
+    }
+
+    @media (max-width:700px) {
+      main .info {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="Image">
+      <img src="{% static 'images/user-icon.jpeg' %}" alt="my Photo">
+    </div>
+    <div class="content">
+      <div class="info">
+        <ul>
+          <li>NAME : ANKIT LAKHIWAL</li>
+          <li>WORKS AT : IIT KANPUR</li>
+          <li>ADDRESS : JAIPUR,RAJSTHAN,302012</li>
+          <li>EMAIL: ankit@iitk.ac.in</li>
+          <li>EDUCATION :
+            <ol>
+              <li>AEROSPACE ENGINEERING-IIT KANPUR</li>
+              <li> RESONANCE CAREER INSTITUTE</li>
+              <li>MEHTA PUBLIC SENIOR SECONDARY SCHOOL</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+</body>
+
+</html>

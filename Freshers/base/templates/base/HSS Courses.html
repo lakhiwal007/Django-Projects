@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HSS Courses</title>
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:ital,wght@0,100;0,200;1,100&display=swap');
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #161623;
+      }
+
+      body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgb(0, 125, 255), rgb(227, 0, 255));
+        clip-path: circle(30% at right);
+      }
+
+      body::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(120deg, rgb(255, 252, 0), rgb(0, 255, 247));
+        clip-path: circle(20% at 10% 10%);
+
+      }
+
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        z-index: 1;
+      }
+
+      .container .card {
+        position: relative;
+        width: 300px;
+        height: 450px;
+        margin: 30px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0, .5);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        transition: 1s;
+      }
+
+      .container .card .content {
+        padding: 20px;
+        text-align: center;
+        transition: .5s;
+      }
+      .container .card:hover{
+        transform: scale(1.1);
+      }
+      .container .card .content h1 {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 3.5em;
+        color: rgb(255, 255, 255, 0.3);
+        pointer-events: none;
+      }
+
+      .container .card .content h3 {
+        font-size: 1.8em;
+        padding-top: 80px;
+        color: #fff;
+        z-index: 1;
+      }
+
+      .container .card .content p {
+        font-size: 1em;
+        color: #fff;
+        font-weight: 300;
+      }
+
+      .container .card .content a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 15px;
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: 500;
+        box-shadow: 0 5px 15px rgb(0,0,0,.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <h1>ENG437A</h1>
+          <h3>Indian Literature</h3>
+          <p>The course will give an introduction to the range and breadth of Indian literature.The syllabus is a collection of poems, short stories and prose fiction.Ancient, Medieval and Modern India are represented.
+</p>
+          <a href="https://drive.google.com/drive/folders/1-Os57CxeTPrUT4lXBO7fZ_JwqHvM0WLZ" target="_blank">Read More</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <h1>ENG124A</h1>
+            <h3>Language & Society</h3>
+            <p>The course investigates the relationship between language, cognition and culture. The objective
+of the course is to sensitize students to the sociocultural dimension of language and language use.</p>
+            <a href="https://drive.google.com/drive/folders/1AhNkNMPhcB2Yta-aoedFt4akui3iPN3l" target="_blank">Read More</a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="content">
+              <h1>ECO201A</h1>
+              <h3>Microeconomics I</h3>
+              <p>Microeconomics helps in the understanding of the decision-making
+              process of firms and individuals. The understanding of microeconomics is required to study
+              practically all the fields of economics.</p>
+              <a href="https://drive.google.com/drive/folders/1zymHPhREkN0s0cmd7O9IplxMoZrydr10" target="_blank">Read More</a>
+            </div>
+          </div>
+
+  </body>
+</html>

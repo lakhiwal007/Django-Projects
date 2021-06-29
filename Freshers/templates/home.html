@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freshers</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://kit.fontawesome.com/0c1723de8c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{% static 'CSS/LakhiCSS.css' %}">
+  <script src="{% static 'JS/lakhi.js' %}" charset="utf-8"></script>
+  <script src="{% static 'JS/aboutme.js' %}" charset="utf-8"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Freshers</h1>
+  </header>
+  <nav>
+    <a href="#" id="iconHide" onclick="sideBar()"> <i class="fas fa-bars"></i> </a>
+    <a href="" class="hide1"><i class="fas fa-home"></i> Home</a>
+    <a href="/studymaterial" target="_self" class="hide2"> <i class="fas fa-book"></i> Study Material</a>
+    <a href="/campusinfo" class="hide3"><i class="fas fa-university"></i> Campus Info</a>
+    <a href="/studentcorner" class="hide4"><i class="fas fa-users"></i> Student Corner</a>
+    <a href="/aboutme" class="hide5"><i class="fas fa-user-circle"></i> About Me</a>
+    <a href="#" style="float: right;"> <i class="fas fa-search"></i> </a>
+  </nav>
+  <main>
+    <div id="sidebar">
+      <ul id="lstIem" style="transition: .5s ease-out;overflow: hidden;">
+        <li class="hide1">Home</li>
+        <li>
+          <p class="hide2" id="SM">Study Material<i class="fas fa-sort-down"></i></p>
+          <ul id="studymaterialToggle">
+            <li> <a href="/InstituteCore">Institute Core</a> </li>
+            <li> <a href="/HSS">Humanities & Social Sciences</a> </li>
+            <li>Departmment Compulsary</li>
+            <li>Departmment Elective</li>
+            <li>Open Elective</li>
+            <li> <a href="/ESOs">(Engineering) Science Options</a> </li>
+          </ul>
+        </li>
+
+        <li>
+          <p class="hide3" id="CI">Campus Info <i class="fas fa-sort-down"></i></p>
+          <ul id="CampusInfo">
+            <li>Gymkhana</li>
+            <li>Halls</li>
+            <li>IITK Map</li>
+          </ul>
+        </li>
+        <li>
+          <p class="hide4" id="SC">Student Corner <i class="fas fa-sort-down"></i></p>
+          <ul id="StdntCrnr">
+            <li>Scholarship</li>
+            <li>SPO</li>
+            <li>Student Search</li>
+            <li>Exam Schedule</li>
+            <li>Cpi/Spi Calculator</li>
+          </ul>
+        </li>
+        <li class="hide5">About Me</li>
+      </ul>
+    </div>
+    <div id="mainContent">
+      <h1 id="heading2">Know the rules well So u can break them effectively!</h1>
+      <!-- <iframe src="/aboutme" id="Iframe-1"></iframe>
+      <iframe src="/studentcorner" id="Iframe-2"></iframe>
+      <iframe src="/campusinfo" id="Iframe-3"></iframe> -->
+    </div>
+  </main>
+
+</body>
+
+</html>

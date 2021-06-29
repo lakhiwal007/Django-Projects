@@ -1,0 +1,177 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Study Material</title>
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:ital,wght@0,100;0,200;1,100&display=swap');
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #161623;
+      }
+
+      body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgb(0, 125, 255), rgb(227, 0, 255));
+        clip-path: circle(30% at right);
+      }
+
+      body::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(120deg, rgb(255, 0, 0), rgb(115, 255, 0));
+        clip-path: circle(30% at 10% 10%);
+
+      }
+
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        z-index: 1;
+      }
+
+      .container .card {
+        position: relative;
+        width: 350px;
+        height: 500px;
+        margin: 30px;
+        box-shadow: 20px 20px 50px rgb(0, 0, 0, .5);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        transition: 1s;
+      }
+
+      .container .card .content {
+        padding: 20px;
+        text-align: center;
+        transition: .5s;
+      }
+      .container .card:hover{
+        transform: scale(1.1);
+      }
+      .container .card .content h1 {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        font-size: 5em;
+        color: rgb(255, 255, 255, 0.3);
+        pointer-events: none;
+      }
+
+      .container .card .content h3 {
+        font-size: 1.8em;
+        padding-top: 80px;
+        color: #fff;
+        z-index: 1;
+      }
+
+      .container .card .content p {
+        font-size: 1em;
+        color: #fff;
+        font-weight: 300;
+      }
+
+      .container .card .content a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-top: 15px;
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: 500;
+        box-shadow: 0 5px 15px rgb(0,0,0,.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <h1>IC</h1>
+          <h3>Institute Core</h3>
+          <p>The IC courses are common and compulsory for all the UG students. These courses cover the fundamentals of various topics, ranging from basic sciences such as Mathematics, Physics, Chemistry, and Biology, to core engineering subjects such as manufacturing, electronics, and computing. The IC courses populate the 1st and 2nd-year template arrangements.</p>
+          <a href="/InstituteCore" target="_blank">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h1>HSS</h1>
+          <h3>Humanities & Social Sciences</h3>
+          <p>A natural question that arises is “Why HSS courses in a technology institute?”. While engineering and science courses help us gain better insights into the world’s technological and scientific aspects, HSS courses complement this learning by focusing on various social, cultural, and moral issues.
+</p>
+          <a href="/HSS" target="_blank">Read More</a>
+        </div>
+      </div>
+
+        <div class="card">
+          <div class="content">
+            <h1>DC</h1>
+            <h3>Departmment Compulsary</h3>
+            <p>As the name indicates, these DC are mandatory for students belonging to a specific department. The courses aim to engulf the essential topics related to the department. Many DC courses also form prerequisites for other departmental courses.</p>
+            <a href="" target="_blank">Read More</a>
+          </div>
+        </div>
+
+          <div class="card">
+            <div class="content">
+              <h1>DE</h1>
+              <h3>Departmment Elective</h3>
+              <p>Students have the option to choose from a wide array of courses from their parent discipline, which are offered as DE courses. DE courses are typically present from 5th-sem onwards in most departmental templates. The minimum credit requirement for DE courses varies across programs.</p>
+              <a href="" target="_blank">Read More</a>
+            </div>
+          </div>
+
+            <div class="card">
+              <div class="content">
+                <h1>OE</h1>
+                <h3>Open Elective</h3>
+                <p>All UG students are required to complete around 54 credits, which translates to roughly 6 courses (for some departments, it is 63 credits/7 courses), as Open Electives. These are courses that students may take from any department/program in the Institute. OEs offer students an opportunity to explore diverse topics beyond their parent discipline. </p>
+                <a href="" target="_blank">Read More</a>
+              </div>
+            </div>
+
+              <div class="card">
+                <div class="content">
+                  <h1>ESO's</h1>
+                  <h3>(Engineering) Science Options</h3>
+                  <p>ESO/SO courses are electives offered by different departments concerned with some specific but fundamental science/engineering topics. In total, the students have to complete around 40 credits of ESO/SO courses. Departmental templates have a few compulsory ESO/SOs, while the rest are electives.</p>
+                  <a href="/ESOs" target="_blank">Read More</a>
+                </div>
+              </div>
+            </div>
+  </body>
+</html>
